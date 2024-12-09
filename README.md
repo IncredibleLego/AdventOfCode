@@ -13,6 +13,7 @@ This repository contains all my solutions to the [Advent Of Code](https://advent
 * Day 3 : ⭐
 * Day 4 : ⭐⭐
 * Day 5 : ⭐⭐
+* Day 6 : ⭐
 
 ### **2023**
 
