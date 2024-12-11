@@ -8,28 +8,29 @@ This repository contains all my solutions to the [Advent Of Code](https://advent
 
 ### **2024**
 
-* Day 1 : ⭐⭐
-* Day 2 : ⭐
-* Day 3 : ⭐
-* Day 4 : ⭐⭐
-* Day 5 : ⭐⭐
-* Day 6 : ⭐
-* Day 7 : ⭐
+* Day 1  : ⭐⭐
+* Day 2  : ⭐
+* Day 3  : ⭐
+* Day 4  : ⭐⭐
+* Day 5  : ⭐⭐
+* Day 6  : ⭐
+* Day 7  : ⭐
+* Day 10 : ⭐⭐
 
 ### **2023**
 
-* Day 1 : ⭐⭐
-* Day 2 : ⭐⭐
-* Day 4 : ⭐⭐
-* Day 7 : ⭐
-* Day 8 : ⭐⭐
-* Day 9 : ⭐⭐
+* Day 1  : ⭐⭐
+* Day 2  : ⭐⭐
+* Day 4  : ⭐⭐
+* Day 7  : ⭐
+* Day 8  : ⭐⭐
+* Day 9  : ⭐⭐
 * Day 10 : ⭐
 
 ### **2021**
 
-* Day 6 : ⭐⭐
-* Day 9 : ⭐⭐
+* Day 6  : ⭐⭐
+* Day 9  : ⭐⭐
 
 
 
