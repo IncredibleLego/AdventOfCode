@@ -11,8 +11,19 @@ import(
 )
 
 func main(){
-	p1()
-	//p2()
+	var grid [][]int
+	scanner := bufio.NewScanner(os.Stdin)
+	for scanner.Scan(){
+		line := strings.Split(scanner.Text(), "")
+		nums := []int{}
+		for i := 0; i < len(line); i++{
+			x, _ := strconv.Atoi(line[i])
+			nums = append(nums, x)
+		}
+		grid = append(grid, nums)
+	}
+	p1(grid)
+	p2(grid)
 }
 
 func checkTrails(grid [][]int, x int, y int, n int, f int) int{
@@ -35,19 +46,8 @@ func checkTrails(grid [][]int, x int, y int, n int, f int) int{
 	return trails
 }
 
-func p1(){
-	var grid [][]int
+func p1(grid [][]int){
 	sumEnding := 0
-	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan(){
-		line := strings.Split(scanner.Text(), "")
-		nums := []int{}
-		for i := 0; i < len(line); i++{
-			x, _ := strconv.Atoi(line[i])
-			nums = append(nums, x)
-		}
-		grid = append(grid, nums)
-	}
 	for x:=0; x < len(grid); x++{
 		for y:=0; y < len(grid[x]); y++{
 			if grid[x][y] == 0{
@@ -67,22 +67,11 @@ func p1(){
 			}
 		}
 	}
-	fmt.Println("Sum of ending: ", sumEnding)	
+	fmt.Println("Sum of ending:", sumEnding)	
 }
 
-func p2(){
-	var grid [][]int
+func p2(grid [][]int){
 	sumTrails := 0
-	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan(){
-		line := strings.Split(scanner.Text(), "")
-		nums := []int{}
-		for i := 0; i < len(line); i++{
-			x, _ := strconv.Atoi(line[i])
-			nums = append(nums, x)
-		}
-		grid = append(grid, nums)
-	}
 	for x:=0; x < len(grid); x++{
 		for y:=0; y < len(grid[x]); y++{
 
@@ -91,5 +80,5 @@ func p2(){
 			}
 		}
 	}
-	fmt.Println("Sum of trails: ", sumTrails)
+	fmt.Println("Sum of trails:", sumTrails)
 }
