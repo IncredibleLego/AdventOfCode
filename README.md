@@ -6,6 +6,10 @@ This repository contains all my solutions to the [Advent Of Code](https://advent
 
 ## Solved exercises
 
+### **2025**
+
+* Day 1  : ⭐⭐
+
 ### **2024**
 
 * Day 1  : ⭐⭐
@@ -35,4 +39,4 @@ This repository contains all my solutions to the [Advent Of Code](https://advent
 
 
 
-*Francesco Corrado 2024*
+*Francesco Corrado 2025*
