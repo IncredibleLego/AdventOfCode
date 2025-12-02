@@ -10,5 +10,6 @@ curl "https://adventofcode.com/2025/day/$1/input" \
 	> "input.txt"
 
 touch day$1.go
+echo "package main" > day$1.go
 touch testfile
 go mod init day$1
