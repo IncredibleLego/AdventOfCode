@@ -18,46 +18,23 @@ func main() {
 		text := scanner.Text()
 		input = append(input, text)
 	}
-	p1(input)
-	p2(input)
+	day3(input, 2, 1)
+	day3(input, 12, 2)
 }
 
-func p1(input []string) {
+func day3(input []string, x int, part int) {
 	var result int
 	for i := range input {
 		var numbers []int
-		var bigger1, bigger2 int
-		values := strings.Split(input[i], "")
-		for j := range values {
-			num, _ := strconv.Atoi(values[j])
-			numbers = append(numbers, num)
-		}
-		for k := 0; k < len(numbers); k++ {
-			if numbers[k] > bigger1 && k != len(numbers)-1 {
-				bigger1 = numbers[k]
-				bigger2 = numbers[k+1]
-			} else if numbers[k] > bigger2 {
-				bigger2 = numbers[k]
-			}
-		}
-		result += bigger1*10 + bigger2
-	}
-	fmt.Println("Result Part 1:", result)
-}
-
-func p2(input []string) {
-	var result int
-	for i := range input {
-		var numbers []int
-		var positions []int
 		values := strings.Split(input[i], "")
 		for j := range values {
 			num, _ := strconv.Atoi(values[j])
 			numbers = append(numbers, num)
 		}
 		posStart := 0
-		posEnd := len(numbers) - 12
-		for range 12 {
+		posEnd := len(numbers) - x
+		n := x - 1
+		for range x {
 			bigger := 0
 			pos := 0
 			for l := posStart; l <= posEnd; l++ {
@@ -71,15 +48,9 @@ func p2(input []string) {
 			}
 			posStart = pos + 1
 			posEnd++
-			positions = append(positions, pos)
-		}
-		var value int
-		n := 11
-		for _, m := range positions {
-			value += numbers[m] * int(math.Pow10(n))
+			result += bigger * int(math.Pow10(n))
 			n--
 		}
-		result += value
 	}
-	fmt.Println("Result Part 2:", result)
+	fmt.Println("Result Part", part, ":", result)
 }
