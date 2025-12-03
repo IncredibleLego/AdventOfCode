@@ -9,6 +9,8 @@ This repository contains all my solutions to the [Advent Of Code](https://advent
 ### **2025**
 
 * Day 1  : ⭐⭐
+* Day 2  : ⭐⭐
+* Day 3  : ⭐⭐
 
 ### **2024**
 
