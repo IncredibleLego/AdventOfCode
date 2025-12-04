@@ -11,6 +11,7 @@ This repository contains all my solutions to the [Advent Of Code](https://advent
 * Day 1  : ⭐⭐
 * Day 2  : ⭐⭐
 * Day 3  : ⭐⭐
+* Day 4  : ⭐⭐
 
 ### **2024**
 
