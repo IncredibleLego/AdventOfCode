@@ -12,8 +12,9 @@ import (
 	"strings"
 )
 
+// They cant't work toghether, comment the part you dont'use
 func main() {
-	//p1()
+	p1()
 	p2()
 }
 
